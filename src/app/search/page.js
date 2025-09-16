@@ -6,6 +6,7 @@ function SerachBar() {
     const [ searchQuery, setSearchQuery] = useState('');
 
     const debouncedValue = useDebounce(searchQuery,5)
+    console.log("debounced value", debouncedValue)
 
     useEffect( () => {
        console.log("SearchBar component")
